@@ -1,3 +1,27 @@
+IDEA
+
+Users will be able to search stocks and do there own research when it comes to trading and investing.  If they desire, they can create an account, log in, and search stock information (current and past).  They will also have the option to track there trades by logging the stock name, date, time, price entered, price exited, profit/loss, % gain/loss, and pattern.  They can edit this information and even delete it if need be.  
+
+MVP 
+-user can search different tickers/stocks that allows you to see the stock chart
+-user can click on the stock and get information abou the company
+-user can post, edit, and even delete trades
+-user can create account
+-user can login to account
+
+PAGES
+home page
+stock information page
+login page
+trade tracking page
+
+DATABASE CONTAINS
+stock charts
+stock information/stats/news
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
