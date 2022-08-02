@@ -1,5 +1,5 @@
 :root {
-  --background: #232323;
+  /* --background: #232323; */
   --lift: #2c2c2c;
   --faded: #838383;
   --accent: 198, 76%;
@@ -26,3 +26,4 @@ Header {
   margin-bottom: 80px;
   box-sizing: border-box;
 }
+

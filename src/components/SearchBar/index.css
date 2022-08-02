@@ -1,0 +1,17 @@
+.searchInputs {
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 56px;
+    box-shadow: 0 4x 16px #1317221a;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 360px;
+    padding: 125px 50px;
+    user-select: none;
+    width: 100%;
+}
