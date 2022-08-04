@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Header from "./components/Header";
-import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Login from "./components/Login";
+import Routes from "./components/Routes";
 
 function App() {
   const [users, setUsers] = useState("");
@@ -55,15 +52,7 @@ function App() {
     });
   }
 
-  return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-      </Routes>
-    </div>
-  );
+  return <div className="App">{Routes}</div>;
 }
 
 export default App;
