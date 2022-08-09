@@ -30,17 +30,17 @@ function App() {
     setUsers("");
   }
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/api/info")
-      .then((res) => {
-        console.log("RES", res.data);
-        setServerInfo(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, [users]);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3000/api/info")
+  //     .then((res) => {
+  //       console.log("RES", res.data);
+  //       setServerInfo(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, [users]);
 
   function handleComponents() {
     return serverInfo.map((item, index) => {

@@ -1,94 +1,4 @@
-/* .login {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    padding: 90px 0 90px 0;
-    background-color: rgb(252,252,252);
-}
-
-.sub-login {
-    display: flex;
-    justify-content: center;
-    height: 550px;
-    width: 35%;
-    box-shadow: 11px 12px 13px 12px rgb(207,207,207);
-    padding-top: 30px;
-    border-radius: 60px;
-    background-color: white;
-}
-
-.imgs {
-    padding-top: 20px;
-    justify-content: center;
-    display: flex;
-}
-
-.container-image {
-    background-color: rgb(223, 221, 221);
-    border-radius: 150px;
-    align-items: center;
-    display: flex;
-    height: 115px;
-    width: 115px;
-    justify-content: center;
-}
-
-.account-icon {
-    height: 100px;
-    width: 100px;
-    border-radius: 130px;
-}
-
-input {
-    width: 300px;
-    height: 50px;
-    border-radius: 60px;
-    box-shadow: inset 0px 0px 25px 0px #888;
-}
-
-/* .mail-icon { */
-    /* height: 25px; */
-    /* width: 25px; */
-    /* position: absolute; */
-    /* padding: 14px 0 0 25px; */
-    /* border: none; */
-    /* outline: none; */
-    /* background-color: #fff; */
-    
-/* } */
-
-/* .password-icon {
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    padding: 14px 0 0 25px;
-} */
 /* 
-.text {
-    padding-left: 70px;
-    font-size: 20px;
-}
-
-.login-btn {
-    width: 350px;
-    height: 25px;
-    border-radius: 60px;
-    background-color: #919191;
-    color: white;
-    font-size: 25px;
-    border: none;
-    padding-top: 25px;
-}
-
-.link {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-a{
-    color: blue;
-}
- */
 
  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
@@ -203,4 +113,75 @@ button {
 
 .line {
     display: inline-block;
+} */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.main-container {
+    font-family: 'Raleway', sans-serif;
+    /* background-image: url(../../assets/background_img_capstone.jpg); */
+    /* background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+} 
+
+.background_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    margin: 3rem 0 2rem 0;
+}
+
+Input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body { */
+  /* background-image: url("./assets/background_img_capstone.jpg"); */
+  /* background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Raleway", sans-serif; */
+/* } */
+
+
