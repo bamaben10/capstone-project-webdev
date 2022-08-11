@@ -1,40 +1,44 @@
 import React, { useState } from "react";
 import { ApiClient, DefaultApi } from "finnhub";
+import Candles from "./Candles";
 
 function StockCandles() {
-  const [stockCandles, setStockCandles] = useState;
-  const [search, setSearch] = useState;
+  const [stockCandles, setStockCandles] = useState([]);
+  const [search, setSearch] = useState("");
 
-  //   const Graph = () => {
-  //     const finnhub = require("finnhub");
-
-  //     const api_key = finnhub.ApiClient.instance.authentications["api_key"];
-  //     api_key.apiKey = "cblab4iad3i4fg7gtm60";
-  //     const finnhubClient = new finnhub.DefaultApi();
-
-  //     console.log(graph);
-
-  const getStockCandles = (e) => {
-    e.preventDefault();
+  const getCandles = (e) => {
+    e.preventDefault(search);
     const api_key = ApiClient.instance.authentications["api_key"];
     api_key.apiKey = "cblab4iad3i4fg7gtm60";
     const finnhubClient = new DefaultApi();
-    finnhubClient.graph(`${search}`, (error, data, response) => {
-      console.log(stockCandles);
+    finnhubClient.stockCandles(`${search()}`, (error, data, response) => {
+      console.log(data);
+      setStockCandles(data);
     });
   };
+  console.log(stockCandles);
 
-  // finnhubClient.stockCandles(
-  //   "AAPL",
-  //   "D",
-  //   1590988249,
-  //   1591852249,
-  //   (error, data, response) => {
-  //     console.log(data);
-  //   }
-  // );
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    setSearch(e.target.value);
+  };
 
-  return <div>StockCandles</div>;
+  return (
+    <div className="stock-candles">
+      <div className="stock-candles-search">
+        <h1 className="stock-chart">Stock chart</h1>
+        <Candles
+          closePrices={stockCandles.c}
+          highPrices={stockCandles.h}
+          lowPrices={stockCandles.l}
+          openPrices={stockCandles.o}
+          status={stockCandles.s}
+          timestamp={stockCandles.t}
+          volume={stockCandles.v}
+        />
+      </div>
+    </div>
+  );
 }
 
 export default StockCandles;

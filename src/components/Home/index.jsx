@@ -25,7 +25,7 @@ const Home = () => {
       </header>
       <div>
         <StockAPI />
-        {/* <StockCandles /> */}
+        <StockCandles />
       </div>
     </div>
   );
